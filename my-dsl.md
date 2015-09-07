@@ -1,38 +1,40 @@
 # Language
-_What is the name of the language? Link the name to its webpage 
-(if appropriate)._
+Alda
+[Source Code](https://github.com/alda-lang/alda)
 
 
 # Domain
-_Describe the language's domain in five words._
+General Light-weight Music Programming Language
 
 
 # Computational model
-_What is the underlying computational model of this language? To answer this 
-question, provide a high-level description (no more than 100 words) of the 
-computation that occurs when someone executes a program in this language._
-
+When someone runs an alda script, their code is first converted into Clojure
+code which creates a map of the score. That is then used to produce sounds 
+that the alda code described. 
 
 # DSL-ness
-_Fowler writes about a spectrum of languages, from general-purpose languages to 
-"purely" domain-specific. Where does the DSL you chose fall on this spectrum, 
-and why?_ 
-
+Alda is purely domain-specific. It only allows for the description of different 
+lines of music. There are no loops or conditionals, so the language is not
+turing complete. There is no computation that can be done with the language
+other than playing static lines of music. 
 
 # Internal or external?
-_Is the language implemented as an internal or external DSL? 
-Justify your answer._
-
+This is an external DSL. While it is eventually converted into Clojure code
+it starts off as just a list of lines and list of notes. It is then parsed
+and converted into other code. 
 
 # Host language
-_What language(s) was (were) used to implement the DSL?_
+Clojure
 
 
 # Benefits
-_Identify one potential benefit of the DSL: how is a programmer's life or a 
-company's bottom line made easier by the existence of this language?_
+It allows for easier and quicker sketching of musical ideas than existing 
+music notation tools. Editing and addition to existing ideas is also much
+simpler as it doesn't require hard to navigate menus. 
 
 
 # Drawbacks
-_Identify one potential drawback of the DSL: what does a programmer or company 
-lose by using this DSL instead of a general-purpose language?_
+Using this instead of a GUI music notation tool limits the type of people
+who can review and understand the worked created. Installing the program
+and even writing scripts requires a limited ammount of computer and 
+programming knowledge.

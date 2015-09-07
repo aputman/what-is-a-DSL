@@ -1,0 +1,68 @@
+startshape CENTER
+
+rule CENTER {
+	RANDOMCIRCLE {}
+	MOVE {}
+}
+
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x 4 y 2}
+}
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x 2 y - 1}
+}
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x 2 y - 5}
+}
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x 3 y - 3}
+}
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x 2 y 7}
+}
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x 5 y 1}
+}
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x 2 y 9}
+}
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x 4 y 7}
+}
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x -3 y 1}
+}
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x -5 y 2}
+}
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {x -2  y 10}
+}
+
+rule MOVE {
+	RANDOMCIRCLE {}
+	MOVE {}
+}
+
+rule MOVE { RANDOMCIRCLE {} }
+
+rule RANDOMCIRCLE { CIRCLE {size 1 hue 5 sat 0.7 b 0.6} }
+rule RANDOMCIRCLE { CIRCLE {size 1 hue 120 sat 0.7 b 0.6} }
+rule RANDOMCIRCLE { CIRCLE {size 1 hue 222 sat 0.7 b 0.6} }
+rule RANDOMCIRCLE { CIRCLE {size 2 hue 5 sat 0.7 b 0.6} }
+rule RANDOMCIRCLE { CIRCLE {size 2 hue 120 sat 0.7 b 0.6} }
+rule RANDOMCIRCLE { CIRCLE {size 2 hue 222 sat 0.7 b 0.6} }
+rule RANDOMCIRCLE { CIRCLE {size 3 hue 5 sat 0.7 b 0.6} }
+rule RANDOMCIRCLE { CIRCLE {size 3 hue 120 sat 0.7 b 0.6} }
+rule RANDOMCIRCLE { CIRCLE {size 3 hue 222 sat 0.7 b 0.6} }
